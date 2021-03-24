@@ -12,6 +12,7 @@ text me ~~when~~ if he makes a 3 again.
 <span style="background-color: #FFFF00">This code only works for Mac, sorry!</span>
 
 ## 0. Install packages. Run:
+Download the entire repository and unzip. Place the folder NBATextAlertswhere ever
 
     pip install -r requirements.txt
 
@@ -35,7 +36,7 @@ Create a new phone number, and you should see something similar. Then open <span
 in the NBATextAlerts Folder and add the <span style="background-color: #FFFF00">ACCOUNT SID</span>, <span style="background-color: #FFFF00">AUTH TOKEN</span>, and <span style="background-color: #FFFF00">PHONE NUMBER</span> 
 according to Alerts.py. See below for more information
 
-![alt text]
+![alt text](https://github.com/kevinjiang019/NBATextAlerts/blob/main/Twilio%20%202.png)
 
 ## 2. Player and Event set up:
 Open <span style="background-color: #FFFF00">PATH.py</span> in NBATextAlerts. Add the full name (with proper capitalization) and the event
