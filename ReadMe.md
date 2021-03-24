@@ -53,14 +53,14 @@ Here's what it does:
 1. Runs a web scraper(spider) that collects all nba team schedules and start and approximate end times and puts them in a folder on the desktop called "Nba Schedules"
 2. Creates a cronjob to update these schedules weekly (On sunday at 11 am, which is changeable)
 3. Creates a cronjob to run gameCheckBot.py daily at 11 am.
-  
-If all you want are text alerts and you set everything up. You're all done. Assuming you set up Twilio properly, you will receive automated text alerts whenever your 
-player does the specified action. You may ignore the rest
+
 
 ## 3b Inputs during game day:
 While the code is running, it will ask you if you wanna "break loop" in the new opened terminal. In put yes to manually terminate the program.
 Otherwise, it will auto terminate after the expected end game time.
 
+If all you want are text alerts and you set everything up. You're all done. Assuming you set up Twilio properly, you will receive automated text alerts whenever your 
+player does the specified action. You may ignore the rest
 
 ## π. How it works
 I'm a student, so I will explain my design decisions by file going by file.
