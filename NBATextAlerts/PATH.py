@@ -17,9 +17,9 @@ from pathlib import Path
 import sys
 #Input player name, event you want to be alerted about(see dictionary below) and team name
 #Only change these values and dictionary if you want the bot to work properly
-player_full_name = "Devin Booker"
+player_full_name = "Giannis Antetokounmpo"
 event = "Scores"
-team = "Phoenix Suns"
+team = "Milwaukee Bucks"
 
 
 
