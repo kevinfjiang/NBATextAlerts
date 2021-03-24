@@ -104,7 +104,7 @@ If it matches, it records the time-stamp and the combined-score, if all 3, the t
    
 When either **2.** or **3.** meet their end condition, they end the loop of **loopEvent()** and exit the bot.
 
-# 4. Closing Thoughts
+## 4. Closing Thoughts
 If you made it this far, thank you so much for reading this. I appreciate anyone who took the time to look. 
 I'd like to thank primarily my brother who gave me the idea. I'd also like to thank my stats grade for sacrificing 
 itself for this project. Once again, I am a student, so I appreciate any and all constructive feedback, nor will I claim 
