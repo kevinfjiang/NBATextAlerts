@@ -57,12 +57,12 @@ Here's what it does:
 If all you want are text alerts and you set everything up. You're all done. Assuming you set up Twilio properly, you will receive automated text alerts whenever your 
 player does the specified action. You may ignore the rest
 
-##3b Inputs during game day:
+## 3b Inputs during game day:
 While the code is running, it will ask you if you wanna "break loop" in the new opened terminal. In put yes to manually terminate the program.
 Otherwise, it will auto terminate after the expected end game time.
 
 
-## 3c. How it works
+## π. How it works
 I'm a student, so I will explain my design decisions by file going by file.
 I used crontab to automate this task mostly. 
 
