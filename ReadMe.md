@@ -101,6 +101,7 @@ If it matches, it records the time-stamp and the combined-score, if all 3, the t
 2. **manualTerminate()**: it constantly checks for the input. If 'yes' is input, it will terminate, otherwise it loops
 3. **ScheduledTerminate()**: if the actual time passes expected game end time, the program will terminate. Feel free to 
    change expected game end time in the CSV or in espn_spider.py
+When either **2.** or **3.** meet their end condition, they close **loopEvent()** with them, closing the bot
 
 # 4. Closing Thoughts
 If you made it this far, thank you so much for reading this. I appreciate anyone who took the time to look. 
