@@ -9,7 +9,7 @@ import gameCheckBot
 import PATH
 
 def main(player, event, schedule):
-    completeName = os.path.join(PATH.getPath('NBATextAlerts/'), schedule)
+    completeName = os.path.join(PATH.getPath('NBATextAlerts/Nba Schedules'), schedule)
 
 
     df = pd.read_csv(completeName)
@@ -29,7 +29,7 @@ def main(player, event, schedule):
 
 
     if len(list(item)) == 0:
-        job = cron.new(command='''osascript -e 'tell application "Terminal" to do script "{} {}"' '''.format(PATH.getPath("python"), PATH.getPath("botHelper")),
+        job = cron.new(command='''osascript -e 'tell application "Terminal" to do script "{} {}"' '''.format(PATH.getPath("PYTHON"), PATH.getPath("botHelper")),
                        comment="NBA schedule {} {} on {}".format(player, event, df1.loc[0].at['date']))
         job.hour.on(start.hour)
         job.minute.on(start.minute)
