@@ -4,14 +4,14 @@
 Hi r/NBA,
 
 TL:DR; I created a program that automatically texts you 
-whenever Ben Simmons makes a 3. Last week Ben Simmons made
-a 3 and I don't have time to watch every 76ers game waiting 
+whenever Ben Simmons makes a 3 and it runs every 76ers game. Last week Ben Simmons made
+a 3, and I don't have time to watch every 76ers game waiting 
 for him to hit another. Thus, I created a bot that will automatically
-text me ~~when~~ if he makes a 3 again.
+text me ~~when~~ if he makes a 3 again. I created this at the request of my brother.
 
 <span style="background-color: #FFFF00">This code only works for Mac, sorry!</span>
 
-## 0. Install packages. Run:
+## 0. Install packages, Run:
 Download the entire repository and unzip. Place the folder NBATextAlerts where ever
 
     pip install -r requirements.txt
@@ -27,8 +27,7 @@ the project. You can only text one number per account,
 so to text multiple people, you gotta sign up multiple times
 
 
-Note: You have a limit to the number of texts. Luckily for me,
-Ben Simmons is very bad at 3 pointers. You get allocated 14 dollars and each text "costs"
+Note: You have a limit to the number of texts. You get allocated 14 dollars and each text "costs"
 .07 cents, so you get 200 texts per account (more than enough for me)
 
 Now after you sign up go to the home tab in the top left and click Dashboard. 
@@ -36,7 +35,7 @@ Create a new phone number, and you should see something similar. Then open <span
 in the NBATextAlerts Folder and add the <span style="background-color: #FFFF00">ACCOUNT SID</span>, <span style="background-color: #FFFF00">AUTH TOKEN</span>, and <span style="background-color: #FFFF00">PHONE NUMBER</span> 
 according to Alerts.py. See below for more information
 
-![alt text](https://github.com/kevinjiang019/NBATextAlerts/blob/d43809fcadc776cf2509ee626192cbfe9b9d2ed3/Twilio%20%202.png =100x100)
+<img src="https://github.com/kevinjiang019/NBATextAlerts/blob/d43809fcadc776cf2509ee626192cbfe9b9d2ed3/Twilio%20%202.png" height="600" width="480" class="center">
 
 ## 2. Player and Event set up:
 Open <span style="background-color: #FFFF00">PATH.py</span> in NBATextAlerts. Add the full name (with proper capitalization) and the event
@@ -45,7 +44,7 @@ out prior espn play-by-plays. Check out later in the text to figure find what th
 <span style="background-color: #FFFF00">PLAYER</span>, <span style="background-color: #FFFF00">EVENT</span>, <span style="background-color: #FFFF00">TEAM</span> in <span style="background-color: #FFFF00">PATH.py</span>.
 
 
-## 3. Schedule Set Up
+## 3. Schedule Set Up:
 Once all that is taken care of, and you're in the NBATextAlerts directory run: 
 
     python setup.py  
@@ -63,7 +62,7 @@ Otherwise, it will auto terminate after the expected end game time.
 If all you want are text alerts and you set everything up. You're all done. Assuming you set up Twilio properly, you will receive automated text alerts whenever your 
 player does the specified action. You may ignore the rest
 
-## π. How it works
+## π. How it works:
 I'm a student, so I will explain my design decisions by file going by file.
 I used crontab to automate this task mostly. 
 
@@ -97,7 +96,6 @@ The webscraper mechanism is controlled using threading, running 3 simultaneous p
 1. **loopEvent()**: constantly checks the latest game detail. It then compares the latest to the criteria stataed in PATH.py.
 If it matches, it records the time-stamp and the combined-score, if all 3, the text, time, and score, are new, it will add it 
    to a previously seen list and notify you the criteria have been met. Otherwise, it ignores it. 
-   
 2. **manualTerminate()**: it constantly checks for the input. If 'yes' is input, it will terminate, otherwise it loops
 3. **ScheduledTerminate()**: if the actual time passes expected game end time, the program will terminate. Feel free to 
    change expected game end time in the CSV or in espn_spider.py
@@ -106,6 +104,6 @@ If it matches, it records the time-stamp and the combined-score, if all 3, the t
 If you made it this far, thank you so much for reading this. I appreciate anyone who took the time to look. 
 I'd like to thank primarily my brother who gave me the idea. I'd also like to thank my stats grade for sacrificing 
 itself for this project. Once again, I am a student, so I appreciate any and all constructive feedback, nor will I claim 
-I am the only person with this bad idea.
+I am the only person with this silly idea. I have considrered creating a bot that tweets at Simmons everytime he makes a 3.
 
 
