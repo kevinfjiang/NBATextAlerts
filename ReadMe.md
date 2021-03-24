@@ -57,7 +57,7 @@ Here's what it does:
 3. Creates a cronjob to run gameCheckBot.py daily at 11 am.
 
 
-## 3b Inputs during game day:
+## 3b. Inputs during game day:
 While the code is running, it will ask you if you wanna "break loop" in the new opened terminal. Input yes to manually terminate the program.
 Otherwise, it will auto terminate after the expected end game time.
 
