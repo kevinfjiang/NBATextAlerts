@@ -12,7 +12,7 @@ text me ~~when~~ if he makes a 3 again. I created this at the request of my brot
 <span style="background-color: #FFFF00">This code only works for Mac, sorry!</span>
 
 ## 0. Install packages, Run:
-Download the entire repository and unzip. Place the folder NBATextAlerts where ever
+Download the entire repository and unzip. Place the folder NBATextAlerts whereever you typicall put your code
 
     pip install -r requirements.txt
 
