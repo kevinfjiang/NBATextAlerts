@@ -15,7 +15,7 @@ Remember to verify your phone number
 
 from twilio.rest import Client
 
-cellphone = "8608995785" #Input the phone number you want to send texts too (the phone number verified by twilio)
+cellphone = "" #Input the phone number you want to send texts too (the phone number verified by twilio)
 
 twilio_number = ""#Twilio provides a PHONE NUMBER, input it here
 account = ""#Input ACCOUNT SID
