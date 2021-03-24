@@ -35,7 +35,7 @@ Create a new phone number, and you should see something similar. Then open <span
 in the NBATextAlerts Folder and add the <span style="background-color: #FFFF00">ACCOUNT SID</span>, <span style="background-color: #FFFF00">AUTH TOKEN</span>, and <span style="background-color: #FFFF00">PHONE NUMBER</span> 
 according to Alerts.py. See below for more information
 
-<img src="https://github.com/kevinjiang019/NBATextAlerts/blob/d43809fcadc776cf2509ee626192cbfe9b9d2ed3/Twilio%20%202.png" height="600" width="480" class="center">
+<img src="https://github.com/kevinjiang019/NBATextAlerts/blob/c300dd4abe7a7df69d9a21f65be7e16ef8a1c795/Twilio%20%202.png" height="480" width="400" class="center">
 
 ## 2. Player and Event set up:
 Open <span style="background-color: #FFFF00">PATH.py</span> in NBATextAlerts. Add the full name (with proper capitalization) and the event
