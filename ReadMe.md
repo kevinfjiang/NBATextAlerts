@@ -62,7 +62,7 @@ While the code is running, it will ask you if you wanna "break loop" in the new 
 Otherwise, it will auto terminate after the expected end game time.
 
 If all you want are text alerts and you set everything up. You're all done. Assuming you set up Twilio properly, you will receive automated text alerts whenever your 
-player does the specified action. You may ignore the rest
+player does the specified action. Essentially if you let it run daily and your computer isn't off during a scheduled run time, you will always receive texts.
 
 ## π. How it works:
 I'm a student, so I will explain my design decisions by file going by file.
