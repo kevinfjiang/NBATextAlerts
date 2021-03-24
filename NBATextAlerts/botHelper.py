@@ -9,7 +9,7 @@ import gameCheckBot
 import PATH
 
 def main(player, event, schedule):
-    completeName = os.path.join(PATH.getPath('NBATextAlerts/Nba Schedules'), schedule)
+    completeName = os.path.join(PATH.getPath('NBATextAlerts/Nba Schedules/'), schedule)
 
 
     df = pd.read_csv(completeName)
