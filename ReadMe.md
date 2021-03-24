@@ -35,7 +35,9 @@ Create a new phone number, and you should see something similar. Then open <span
 in the NBATextAlerts Folder and add the <span style="background-color: #FFFF00">ACCOUNT SID</span>, <span style="background-color: #FFFF00">AUTH TOKEN</span>, and <span style="background-color: #FFFF00">PHONE NUMBER</span> 
 according to Alerts.py. See below for more information
 
-<img src="https://github.com/kevinjiang019/NBATextAlerts/blob/c300dd4abe7a7df69d9a21f65be7e16ef8a1c795/Twilio%20%202.png" height="480" width="400" class="center">
+<p align="center"> 
+    <img src="https://github.com/kevinjiang019/NBATextAlerts/blob/c300dd4abe7a7df69d9a21f65be7e16ef8a1c795/Twilio%20%202.png" height="480" width="520" />
+</p>   
 
 ## 2. Player and Event set up:
 Open <span style="background-color: #FFFF00">PATH.py</span> in NBATextAlerts. Add the full name (with proper capitalization) and the event
@@ -64,7 +66,7 @@ player does the specified action. You may ignore the rest
 
 ## π. How it works:
 I'm a student, so I will explain my design decisions by file going by file.
-I used crontab to automate this task mostly. 
+I used crontab to automate this task mostly. This will be less in depth and more about the design philosophies
 
 **PATH.py**  
   Houses all the constants(player name, event)used and paths to files. For certain files, such as python or the directory location,
