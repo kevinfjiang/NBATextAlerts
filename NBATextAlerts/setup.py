@@ -25,7 +25,7 @@ def main():
     #just run setup.py and it should automate for you, checking daily at 8 AM
     #if there's a game
     cron = CronTab(user=getpass.getuser())
-    job = cron.new(command="{} {}".format(PATH.getPath('python'), PATH.getPath('botHelper')))
+    job = cron.new(command="{} {}".format(PATH.getPath('PYTHON'), PATH.getPath('botHelper')))
     job.hour.on(11)
     job.minute.on(0)
 
