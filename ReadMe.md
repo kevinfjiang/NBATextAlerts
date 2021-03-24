@@ -11,13 +11,13 @@ text me ~~when~~ if he makes a 3 again.
 
 <span style="background-color: #FFFF00">This code only works for Mac, sorry!</span>
 
-##0. Install packages. Run:
+## 0. Install packages. Run:
 
     pip install -r requirements.txt
 
 Also, install [chromedriver](https://chromedriver.chromium.org/downloads) for the latest version of chrome
 
-##1. Text Messaging Set Up: 
+## 1. Text Messaging Set Up: 
 [Twilio Link](https://www.twilio.com/)  
 First sign up for a Twilio account, input 
 your email and phone number.   
