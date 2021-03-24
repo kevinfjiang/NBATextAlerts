@@ -12,7 +12,7 @@ text me ~~when~~ if he makes a 3 again.
 <span style="background-color: #FFFF00">This code only works for Mac, sorry!</span>
 
 ## 0. Install packages. Run:
-Download the entire repository and unzip. Place the folder NBATextAlertswhere ever
+Download the entire repository and unzip. Place the folder NBATextAlerts where ever
 
     pip install -r requirements.txt
 
@@ -36,7 +36,7 @@ Create a new phone number, and you should see something similar. Then open <span
 in the NBATextAlerts Folder and add the <span style="background-color: #FFFF00">ACCOUNT SID</span>, <span style="background-color: #FFFF00">AUTH TOKEN</span>, and <span style="background-color: #FFFF00">PHONE NUMBER</span> 
 according to Alerts.py. See below for more information
 
-![alt text](https://github.com/kevinjiang019/NBATextAlerts/blob/main/Twilio%20%202.png)
+![alt text](https://github.com/kevinjiang019/NBATextAlerts/blob/d43809fcadc776cf2509ee626192cbfe9b9d2ed3/Twilio%20%202.png =100x100)
 
 ## 2. Player and Event set up:
 Open <span style="background-color: #FFFF00">PATH.py</span> in NBATextAlerts. Add the full name (with proper capitalization) and the event
@@ -57,7 +57,7 @@ Here's what it does:
 
 
 ## 3b Inputs during game day:
-While the code is running, it will ask you if you wanna "break loop" in the new opened terminal. In put yes to manually terminate the program.
+While the code is running, it will ask you if you wanna "break loop" in the new opened terminal. Input yes to manually terminate the program.
 Otherwise, it will auto terminate after the expected end game time.
 
 If all you want are text alerts and you set everything up. You're all done. Assuming you set up Twilio properly, you will receive automated text alerts whenever your 
@@ -85,7 +85,7 @@ setup.py also runs botHelper.py daily. Everyday, botHelper.py checks if there's 
 If there is based on the csv file for the team, it collects the row for today's game and processes the info. It then will 
 create a cronjob for the start time of the game. It then closes. Then, when it's time for the game, the cronjob will use botHelper.py
 and will see the game has started, thus deploying gameCheckBot.py. It will also remove the cronjob when the bot deploys so every day, the only cronjobs
-are the ones from **setup.py**.
+are the ones from **setup.py**. The cronjob will open a new terminal as cronjob doesn't handle input/outputs well, so don't be surprised.
 
 **gameCheckBot.py**  
 Here's the bulk. So this bot uses selenium and begins by getting the path to chrome driver. Then it opens the page for the 
