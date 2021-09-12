@@ -14,6 +14,8 @@ text me ~~when~~ if he makes a 3 again. I created this at the request of my brot
 ## 0. Install packages, Run:
 Download the entire repository and unzip. Place the folder NBATextAlerts whereever you typicall put your code
 
+    terraform init
+    terraaform apply
     pip install -r requirements.txt
 
 Also, install [chromedriver](https://chromedriver.chromium.org/downloads) for the latest version of chrome
